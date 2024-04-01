@@ -19,23 +19,6 @@ void DuoKongXinHaoLow(int data_len,
   // D1:=JL=1 AND CL;
   JCJArray d1 = jl == 1 && cl;
 
-  // D2:=JL=2 AND CL AND REF(D1,1);
-  JCJArray d2 = jl == 2 && cl && JCJRef(d1, 1);
-
-  // D3:=JL=3 AND CL AND REF(D2,1);
-  JCJArray d3 = jl == 3 && cl && JCJRef(d2, 1);
-
-  // D4:=JL=4 AND CL AND REF(D3,1);
-  JCJArray d4 = jl == 4 && cl && JCJRef(d3, 1);
-
-  // D5:=JL=5 AND CL AND REF(D4,1);
-  JCJArray d5 = jl == 5 && cl && JCJRef(d4, 1);
-
-  // D6:=JL=6 AND CL AND REF(D5,1);
-  JCJArray d6 = jl == 6 && cl && JCJRef(d5, 1);
-
-  // D7:=JL=7 AND CL AND REF(D6,1);
-  JCJArray d7 = jl == 7 && cl && JCJRef(d6, 1);
 
   // D8:=JL=8 AND CL AND REF(D7,1);
   JCJArray d8 = jl == 8 && cl && JCJRef(d7, 1);
