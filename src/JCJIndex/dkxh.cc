@@ -11,17 +11,7 @@ void DuoKongXinHaoLow(int data_len,
                       float*,
                       float*,
                       float*) {
-  JCJArray close(data_len, pfInClose);
-  JCJArray n(data_len, pfInN);
-
-  JCJArray isLastBar(data_len, 0.0);
-  isLastBar.multable_data()[data_len - 1] = 1.0;
-
-  // TJ:=C>REF(C,4);
-  JCJArray tj = close > JCJRef(close, 4);
-
-  // CL:=C<REF(C,4);
-  JCJArray cl = close < JCJRef(close, 4);
+  33333333333333333333333333333333333
 
   // JL:=BARSLAST(TJ);
   JCJArray jl = JCJBarsLast(tj);
